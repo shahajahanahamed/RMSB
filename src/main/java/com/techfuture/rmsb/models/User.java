@@ -28,8 +28,8 @@ public class User {
     private String userMobile;
     @Column(name = "userEmail")
     private String userEmail;
-    @JoinColumn(name = "AddressId", referencedColumnName = "addressId")
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "addressId", referencedColumnName = "addressId")
     private Address address;
 
 }

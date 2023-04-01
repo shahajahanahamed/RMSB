@@ -8,7 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @ToString
-@Table(name = "tAddress")
+@Table(name = "taddress")
 public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
